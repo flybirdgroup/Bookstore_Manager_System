@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>黑马图书管理系统</title>
+    <link rel="stylesheet" href="./css/book.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/book.js"></script>
+</head>
+<body>
+
+<div class="box">
+    <div class="title">
+        黑马图书管理系统
+    </div>
+    <div class="content">
+        <ul class="list">
+            <li>
+                <button class="checkBook active">查询图书</button>
+            </li>
+            <li>
+                <button class="addBook">增加图书</button>
+            </li>
+            <li>
+                <button class="delBook">删除图书</button>
+            </li>
+            <li>
+                <button class="updateBook">更改图书</button>
+            </li>
+        </ul>
+        <div class="right">
+            <table class="booklist">
+                <tr class="sheetTitle">
+                    <th>图书编号</th>
+                    <th>图书名字</th>
+                    <th>图书作者</th>
+                    <th>书中人物</th>
+                    <th>出版时间</th>
+                    <th>阅读数</th>
+                    <th>评论数</th>
+                    <th>操作</th>
+                </tr>
+
+                    <tr>
+                        <td><input type="text" value=""></td>
+                        <td><input type="text" value=""></td>
+                        <td><input type="text" value=""></td>
+                        <td><input type="text" value=""></td>
+                        <td><input type="text" value=""></td>
+                        <td><input type="text" value=""></td>
+                        <td><input type="text" value=""></td>
+                        <td><span></span></td>
+                    </tr>
+
+            </table>
+            <table class="bookadd">
+                <tr class="sheetTitle">
+                    <th>图书编号</th>
+                    <th>图书名字</th>
+                    <th>图书作者</th>
+                    <th>书中人物</th>
+                    <th>出版时间</th>
+                    <th>阅读数</th>
+                    <th>评论数</th>
+                    <th>操作</th>
+                </tr>
+                <tr>
+                    <td><input type="text" value="" name="" disabled></td>
+                    <td><input type="text" value="" name=""></td>
+                    <td><input type="text" value="" name=""></td>
+                    <td><input type="text" value="" name=""></td>
+                    <td><input type="text" value="" name=""></td>
+                    <td><input type="text" value="" name=""></td>
+                    <td><input type="text" value="" name=""></td>
+                    <td><span onclick="addBook(this)">增加</span></td>
+                </tr>
+            </table>
+            <table class="bookdel">
+                <tr class="sheetTitle">
+                    <th>图书编号</th>
+                    <th>图书名字</th>
+                    <th>图书作者</th>
+                    <th>书中人物</th>
+                    <th>出版时间</th>
+                    <th>阅读数</th>
+                    <th>评论数</th>
+                    <th>操作</th>
+                </tr>
+                    <tr>
+                        <td><input type="text" value="" name=""></td>
+                        <td><input type="text" value="" name=""></td>
+                        <td><input type="text" value="" name=""></td>
+                        <td><input type="text" value="" name=""></td>
+                        <td><input type="text" value="" name=""></td>
+                        <td><input type="text" value="" name=""></td>
+                        <td><input type="text" value="" name=""></td>
+                        <td><span onclick="delBook(this)">删除</span></td>
+                    </tr>
+            </table>
+            <table class="bookupdate">
+                <tr class="sheetTitle">
+                    <th>图书编号</th>
+                    <th>图书名字</th>
+                    <th>图书作者</th>
+                    <th>书中人物</th>
+                    <th>出版时间</th>
+                    <th>阅读数</th>
+                    <th>评论数</th>
+                    <th>操作</th>
+                </tr>
+                    <tr>
+                        <td><input type="text" value="" name=""></td>
+                        <td><input type="text" value="" name=""></td>
+                        <td><input type="text" value="" name=""></td>
+                        <td><input type="text" value="" name=""></td>
+                        <td><input type="text" value="" name=""></td>
+                        <td><input type="text" value="" name=""></td>
+                        <td><input type="text" value="" name=""></td>
+                        <td><span onclick="putBook(this)">修改</span></td>
+                    </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
